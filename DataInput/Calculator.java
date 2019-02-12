@@ -14,27 +14,27 @@ public class Calculator
 		
 		System.out.println("Select operation from + , - , * , / ");
 		
-		char c = val.nextChar(); //ERROE
+		String c = val.next();
 		
 		switch(c)
 		{
-			case '+':
+			case "+":
 			ans = a + b;
 			System.out.println("sum of two nom is: " + ans);
 			break;
 			
-			case '-':
-			ans = a + b;
+			case "-":
+			ans = a - b;
 			System.out.println("sub of two nom is: " + ans);
 			break;
 			
-			case '*':
-			ans = a + b;
+			case "*":
+			ans = a * b;
 			System.out.println("mul of two nom is: " + ans);
 			break;
 			
-			case '/':
-			ans = a + b;
+			case "/":
+			ans = a / b;
 			System.out.println("div of two nom is: " + ans);
 			break;
 			
