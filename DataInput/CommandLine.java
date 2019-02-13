@@ -1,24 +1,12 @@
-import java.util.Scanner;
+public class CommandLine{
+	public static void main(String args[]) {
+		int a = Integer.parseInt(args[0]);
+		int b = Integer.parseInt(args[2]);
 
-public class Calculator
-{
-	public static void main (String args[])
-	{
-		Scanner val = new Scanner(System.in);
-		
-		System.out.println("Enter two Value wich you want calculate");
-		double a = val.nextDouble();
-		double b = val.nextDouble();
-		
-		//int a = Integer.parshInt(args[0]);
-		
-		double ans;
-		
-		System.out.println("Select operation from + , - , * , / ");
-		
-		String c = val.next();
-		
-		switch(c)
+
+		int ans;
+
+		switch(args[1])
 		{
 			case "+":
 			ans = a + b;
